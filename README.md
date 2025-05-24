@@ -81,8 +81,7 @@ A cloud-native encryption-decryption application that provides secure, scalable,
 ```
 multilayer-encryption-system/
 ├── frontend/             # ReactJS frontend
-├── lambda/               # AWS Lambda functions (Python/Node.js)
-├── utils/                # FED key generation and encryption helpers
+├── lambda/               # FED key generation and encryption helpers
 ├── README.md
 ```
 
