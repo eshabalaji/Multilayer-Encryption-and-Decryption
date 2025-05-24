@@ -6,7 +6,7 @@ A cloud-native encryption-decryption application that provides secure, scalable,
 
 ## 🚀 Features
 
-* 🔒 **Five-Layer Encryption Pipeline:**
+* 🔒 **Four-Layer Encryption Pipeline:**
 
   1. XOR Encryption
   2. Next Lexicographic Permutation
@@ -85,10 +85,4 @@ multilayer-encryption-system/
 ├── utils/                # FED key generation and encryption helpers
 ├── README.md
 ```
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
