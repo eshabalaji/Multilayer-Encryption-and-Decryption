@@ -6,39 +6,44 @@ A cloud-native encryption-decryption application that provides secure, scalable,
 
 ## 🚀 Features
 
-- 🔒 **Five-Layer Encryption Pipeline:**
-  1. XOR Encryption  
-  2. Next Lexicographic Permutation  
-  3. HMAC-based Stream Cipher  
+* 🔒 **Five-Layer Encryption Pipeline:**
+
+  1. XOR Encryption
+  2. Next Lexicographic Permutation
+  3. HMAC-based Stream Cipher
   4. SHA-256 Hashing
 
-- 🧠 **FED-Based Key Generation:**
-  - 512-bit private key
-  - ECC-like public key
-  - 2048-bit modulus
-  - Unique seed and salt
+* 🧠 **FED-Based Key Generation:**
 
-- ☁️ **Cloud-Native Deployment:**
-  - AWS Lambda for serverless encryption logic  
-  - Amazon S3 for secure file storage  
-  - Amazon API Gateway for stateless communication
+  * 512-bit private key
+  * ECC-like public key
+  * 2048-bit modulus
+  * Unique seed and salt
 
-- 🌐 **Responsive Frontend:**
-  - Built with ReactJS  
-  - Upload text files, initiate encryption/decryption, and download results
+* ☁️ **Cloud-Native Deployment:**
 
-- ✅ **Integrity Verification:**
-  - SHA-256 hashes ensure tamper detection and content integrity
+  * AWS Lambda for serverless encryption logic
+  * Amazon S3 for secure file storage
+  * Amazon API Gateway for stateless communication
+
+* 🌐 **Responsive Frontend:**
+
+  * Built with ReactJS
+  * Upload text files, initiate encryption/decryption, and download results
+
+* ✅ **Integrity Verification:**
+
+  * SHA-256 hashes ensure tamper detection and content integrity
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** ReactJS, JavaScript, HTML/CSS  
-- **Backend:** AWS Lambda (Python/Node.js), Amazon API Gateway  
-- **Storage:** Amazon S3  
-- **Security:** HMAC, SHA-256, Base64, ECC-like keys  
-- **Key Management:** Custom Federated Entropy Derivation (FED)
+* **Frontend:** ReactJS, JavaScript, HTML/CSS
+* **Backend:** AWS Lambda (Python/Node.js), Amazon API Gateway
+* **Storage:** Amazon S3
+* **Security:** HMAC, SHA-256, Base64, ECC-like keys
+* **Key Management:** Custom Federated Entropy Derivation (FED)
 
 ---
 
@@ -46,17 +51,44 @@ A cloud-native encryption-decryption application that provides secure, scalable,
 
 > **Note:** This project assumes access to AWS services. You will need AWS credentials and permission to deploy Lambda functions, S3 buckets, and API Gateway routes.
 
-Clone the repository:
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/multilayer-encryption-system.git
    cd multilayer-encryption-system
+   ```
+
+2. Set up the React frontend:
+
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+
+3. Deploy AWS Lambda functions:
+
+   * Use the AWS CLI or AWS Console to upload and configure the Lambda functions found in `/lambda`.
+
+4. Configure Amazon API Gateway to route frontend requests to the Lambda functions.
+
+5. Set up an S3 bucket with appropriate read/write permissions.
+
+---
 
 ## 📁 Project Structure
+
+```
 multilayer-encryption-system/
 ├── frontend/             # ReactJS frontend
-├── lambda/               # FED key generation encryption and decryption
+├── lambda/               # AWS Lambda functions (Python/Node.js)
+├── utils/                # FED key generation and encryption helpers
 ├── README.md
+```
 
-##📄 License
+---
 
-This project is licensed under the MIT License.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
