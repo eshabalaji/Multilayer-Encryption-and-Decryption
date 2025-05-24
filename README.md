@@ -56,3 +56,7 @@ multilayer-encryption-system/
 ├── frontend/             # ReactJS frontend
 ├── lambda/               # FED key generation encryption and decryption
 ├── README.md
+
+##📄 License
+
+This project is licensed under the MIT License.
